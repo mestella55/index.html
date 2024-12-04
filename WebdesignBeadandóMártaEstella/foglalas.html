@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <script>
+        function foglal() {
+                let ido= document.getElementById("idopont").value
+                let oktat= document.getElementById("oktato").value
+            }
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foglalás</title>
+    <link href="./css/alap.css" rel="stylesheet">
+</head>
+<body class="foglalas-bg">
+    <header> 
+        
+        
+          <a href ="index.html" class="fent" > Vissza a kezdőlapra  </a>
+        <h1 class="cim" >FOGLALÁS</h1>
+        <nav class="menu"> 
+            <p><a href= "index.html" >Kezdőlap</a> <a href= "rolunk.html">Rólunk</a> <a href= "szolgaltatasaink.html">Szolgáltatásaink</a> <a href= "index.html#tartalom3" >Nyitvatartás </a> <a href= "foglalas.html">Foglalás</a> <a href= "index.html#tartalom5" >Árlista</a> <a href= "index.html#tartalom6" >Kapcsolat</a>
+          </nav>
+    <div id="bevezeto">
+<section>
+            <p>FEDEZD FEL A KILÁTÁST A NYEREGBŐL!</p>
+            <p>FOGLALJ MOST, HOGY NE MARADJ LE EGY <br>FELEJTHETETLEN ÉLMÉNYRŐL!</p>
+            <p>Ha szeretnél résztvenni edzésünkön, vagy tereplovaglásra jelentkeznél, <br>akkor töltsd ki az űrlapot!</p>
+    </div>
+    
+    
+</section>
+</header>
+<main id="tartalom" class="bev"> 
+<div class="kerdoiv">
+<fieldset>
+    <legend>Az adataid</legend>
+    <label for="nev"><strong>Név</strong></label><br>
+    <input type="text" name="nev" id="nev" size="60" maxlength="30"><br>
+    <label for="email"><strong>E-mail cím</strong></label><br>
+    <input type="email" name="email" id="email" size="60" maxlength="30"><br>
+    <label for="tel"><strong>Telefonszám</strong></label><br>
+    <input type="tel" name="tel" id="tel" size="60" maxlength="30"><br>
+    <input type="checkbox" name="hirlevel" id="hirlevel" value="igen">
+    <label for="hirlevel"> Fel szeretnék iratkozni a hírlevélre, hogy értesüljek a legfrissebb kedvezményekről és a legújabb programokról</label>
+</fieldset>
+<fieldset>
+    <legend><strong>Milyen órán szeretnél részt venni?</strong></legend>
+    <input type="radio" name="ora" id="v1" value="1">
+    <label for="v1">Futószáras edzés</label>
+    <input type="radio" name="ora" id="v2" value="2">
+    <label for="v2">Idomító edzés</label>
+    <input type="radio" name="ora" id="v3" value="3">
+    <label for="v3">Ugró edzés</label>
+    <input type="radio" name="ora" id="v4" value="4">
+    <label for="v4">Tereplovaglás</label>
+    <p> <strong>Melyik oktatónál szeretnél még többet tanulni a lovaglás rejtelmeiről?</strong></p>
+    <select id="oktato">
+        <option value="11">Anna (díjugrató edző)</option>
+        <option value="13">Maja (díjlovas edző)</option>
+        <option value="15">Csaba (futószáras edző)</option>
+        <option value="17">Lilla (túravezető)</option>
+    </select>
+    <p><strong>Melyik napon szeretnél jönni? (Egyszerre csak egy napra tudsz bejelentkezni!)</strong></p>
+    <input type="radio" name="nap" id="v6" value="6">
+    <label for="v6">Hétfő</label>
+    <input type="radio" name="nap" id="v7" value="7">
+    <label for="v7">Kedd</label>
+    <input type="radio" name="nap" id="v8" value="8">
+    <label for="v8">Szerda</label>
+    <input type="radio" name="nap" id="v9" value="9">
+    <label for="v9">Csütürtök</label>
+    <input type="radio" name="nap" id="v10" value="10">
+    <label for="v10">Péntek</label>
+    <p><strong>Hány órakor szeretnél jönni?</strong></p>
+    <select id="idopont">
+        <option value="11">11:00</option>
+        <option value="13">13:00</option>
+        <option value="15">15:00</option>
+        <option value="17">17:00</option>
+    </select>
+    <script src="script.js"></script>
+    <p><strong>Milyen tapasztalatod van a lovakkal?</strong></p>
+    <textarea cols="60" rows="10" maxlength="100" placeholder="Írd le röviden, hogy eddig milyen élményeket szereztél a lovakkal, hogy személyre szabott oktatásban lehessen részed!"></textarea><br>
+    
+    
+</fieldset>
+<fieldset>
+    <legend>Adatok elküldése</legend>
+    <input type="submit" value="Elküld">
+    <input type="reset" value="Töröl">
+</fieldset>
+</div>
+</main>
+
+</body>
+</html>

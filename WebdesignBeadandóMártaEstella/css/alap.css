@@ -1,0 +1,364 @@
+
+  /* általános beállítások, szöveg mérete, típusa */
+ html {
+    background-color: black;
+ }
+  h3, h2 {
+text-align: center;
+color: white;
+font-family: 'Montserrat';
+}
+h2  {
+ font-size: 30px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  text-align: center;
+  font-family:   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p ul li {
+  text-align: justify;
+}
+
+h3 {
+  font-size: 2em;
+}
+html, body {
+  max-width: 100%; 
+  margin: 0; 
+  overflow-x: hidden; /* Vízszintes görgetés tiltása */
+  color: white; 
+}
+/* hivatkouzások */
+a {
+  color: white;
+  position: relative;
+   } 
+   /* vastag betű */
+  b{
+    color: white ;
+    text-decoration: underline;
+  }
+   /* navigációs sor */
+.menu {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 6px; /* Belső térköz 6px */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+z-index: 1000; /* Menü előrébb hozása */
+display: flex; /* Flexbox elrendezés */
+justify-content: space-between;
+align-items: center;
+align-items: center;
+padding: 10px 20px;
+
+}
+ /* animáció előtti állapot */
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px; 
+  font-weight: bold; 
+  white-space: nowrap; /* Szöveg nem törik új sorba */
+}
+/* animáció és az utáni állapot */
+.menu a:hover {
+  letter-spacing: 2px; 
+  word-spacing: 6px; 
+  text-decoration: underline; 
+  font-size: larger;
+}
+
+    /* logo beállításai */
+    #logo {
+      position: absolute;  
+      top: 47px;           
+      left: 40%;  
+      width: 15%;           
+      height: auto;         
+  }
+   /* háttér beállítása, rajta szöveg */
+.image-container {
+    position: relative;
+    max-width: 100%; 
+  aspect-ratio: 1200/ 630;
+  height: auto;
+  background-size: contain;  
+  background-image: url(../media/148.jpg);
+  background-repeat: no-repeat; /* Kép ismétlésének kikapcsolása */
+
+  }
+   /* konténer képpel, rajta szöveggel */
+  .ossze-foglal{
+    position: relative;
+    background-image: url(../media/foglalj.jpg);
+    background-repeat: no-repeat; /* Kép ismétlésének kikapcsolása */
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1090/436;
+    background-size: contain; 
+  }
+  .image {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 0%;
+    padding: 0;
+  }
+   /* képen lévő szöveg beállítsa */
+  .szovegakepen1 {
+    position: absolute; 
+    top: 10%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white;
+    text-align: center;
+    font-size: clamp(1rem, 3vw, 2.5rem); 
+    font-weight: bold;
+    padding: 0 10px;
+    max-width: 90%; 
+  }
+  .szovegakepen2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-size: clamp(1rem, 3vw, 2.5rem);
+
+}
+
+
+   /* 2 kép tulajdonságai */
+  .image-wrapper {
+    width: 100%; 
+    overflow: hidden; 
+  }
+  .image2 {
+    width: 50%; 
+    float: left; 
+    box-sizing: border-box; 
+    padding: 10px; 
+  }
+.cim {
+    color: black;
+    text-align: center;
+    
+  padding: 10px; 
+  text-align: center; 
+}
+.fent {
+    position: relative; 
+    
+    padding: 10px; 
+    font-size: 16px; 
+    color: black;
+}
+#bevezeto {
+    position: relative; 
+    
+    padding: 10px; 
+    font-size: 16px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   }
+/* foglalás űrlap tulajdonságai */
+   .kerdoiv {
+   position: relative;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px; /* Lekerekített sarkok */
+   }
+    /* szöveg hátterének tulajdonságai */
+  .foglalas-bg {
+    background-image: url("../media/foglalas.jpg");
+    background-size: cover;  /* A kép kitölti a teljes hátteret */
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    height: 100vh; /* A háttér magassága a teljes képernyő magassága */
+    width: 100%; /* A háttér szélessége a teljes képernyő szélessége */
+    color: black; 
+    text-align: left; 
+  }
+   .vissza {
+    position: relative; 
+  padding: 10px; 
+  font-size: 16px; 
+  color: black;
+   }
+    
+   .text-container {
+        display: flex; /* Flexbox-t használ, így az elemek rugalmasan igazíthatók. */
+        justify-content: space-evenly; 
+      }
+      .nyitvatartas {
+        text-align: center; 
+      }
+
+      table {
+        width: 100%; 
+        border-collapse: collapse; /* A cellák közötti vonalak összeolvadnak. */
+      }
+      th, td {
+        padding: 8px; 
+        text-align: center; 
+        border-bottom: 1px solid #fff; 
+      }
+      #tartalom5 {
+        text-align: center; 
+       
+        position: relative;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+.kapcsolat {
+   
+        text-align: center; 
+  margin: 0 auto; 
+  padding: 20px;  
+   }
+.info {
+text-align: center;
+}
+.info1 {
+  text-align: center;
+  }
+     .bemutat0 { 
+      text-align: center; 
+      font-size: 16px; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    }
+    .bemutat1 { 
+        padding: 10px; 
+        font-size: 16px; 
+        border: 1px solid #ccc; 
+        border-radius: 4px; 
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+
+    .szolg {
+        padding: 10px; 
+        font-size: 16px; 
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+
+    .left-text {
+      width: 50%;
+      position: relative;
+      padding: 10px;
+  font-size: 1em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
+       .right-text {
+        width: 50%; 
+        padding: 10px;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         }
+        .middle-text { 
+            width: 50%; 
+            position: relative;
+            padding: 10px;
+            font-size: 1em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+      
+      
+      .balkepcim {
+        position: relative;
+        padding: 10px;
+       font-size: 1.5em;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      
+      .jobbkepcim {
+        position: relative;
+        padding: 10px;
+       font-size: 1.5em;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .kozepkepcim {
+        position: relative;
+        padding: 10px;
+       font-size: 1.5em;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      /*változások mobilra */
+      @media screen and (max-width: 680px) {
+        h2 {
+             font-size: 1.2em; 
+         }
+         
+         /* Menü betűméretének csökkentése mobilra */
+         .menu {
+           font-size:smaller;  
+           flex: 1 1 45%; 
+           text-align: center; 
+           
+         }
+         .menu a {
+           font-size: 14px;  
+         }
+         /* szövegek egymás alá */
+         .text-container {
+           flex-direction: column; /* oszlopba rendeződnek */
+           text-align: center;
+           display: flex; 
+           justify-content: center; 
+           align-items: center; 
+           flex-wrap: wrap; /* Az elemek több sorba törnek, ha nem férnek el egy sorban. */
+           width: 100%; 
+         }
+         /* űrlap mérete kisebb lesz */
+         .kerdoiv input[type="text"],
+         .kerdoiv input[type="email"],
+         .kerdoiv input[type="tel"],
+         .kerdoiv select,
+         .kerdoiv textarea {
+             width: 100%;
+             box-sizing: border-box; /* A szélesség tartalmazza a belső térközt és szegélyt is. */
+         }
+       
+         fieldset {
+             padding: 10px;
+             border: none;
+         }
+         
+         .bev {
+             padding: 10px;
+         }
+       
+         .fent {
+             font-size: 14px;
+             margin-top: 10px;
+         }
+       
+         .kerdoiv legend {
+             font-size: 1.1em;
+             margin-bottom: 10px;
+           }
+       }
+          
+         
+       
+          
+      
+     
+      
+  
+   
+
+  
+  
+  
